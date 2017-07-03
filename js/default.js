@@ -1,3 +1,9 @@
+var thmubs = document.querySelectorAll('.thumb');
+for(idx in thumbs){
+  thumbs[idx].onclick = function(){
+    document.getElementById("bigimg").src = 'img/' +this.dataset.image+ '.jpg';
+  }
+}
 
 function setCookie(c_name,value,expiredays){
   
